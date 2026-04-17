@@ -4,8 +4,9 @@ import argparse
 import json
 import os
 from pathlib import Path
-
 import requests
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def tts_to_file(text: str, emotion: str, out_path: Path) -> Path:

@@ -1,6 +1,8 @@
 import argparse
 import os
 from volcenginesdkarkruntime import Ark
+from dotenv import load_dotenv
+load_dotenv()
 
 def _extract_output_text(response) -> str:
     out_items = getattr(response, "output", None)
